@@ -20,11 +20,11 @@ namespace Practice4
             }
             if (i == (((array.Length - 1) / 2)) && (array.Length > 2) && (array.Length % 2 != 0))
             {
-                Console.WriteLine("\nThe word is a Palindrome");
+                Console.WriteLine("\nThe word is a Palindrome ");
             }
             else
             {
-                Console.WriteLine("\nThe word is NOT a Palindrome");
+                Console.WriteLine("\nThe word is NOT a Palindrome ");
             }
         }
 
