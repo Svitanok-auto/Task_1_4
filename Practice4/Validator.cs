@@ -6,9 +6,9 @@ namespace Practice4
     {
         public const int MAX_ATTEMPTS = 10;
 
-        public static char[] GetValidatedCharsArray()
+        public static char[] GetCharArray()
         {
-            Console.WriteLine("\nPlease populate a word or a phrase to check");
+            Console.WriteLine("\nPlease populate a word to check");
             int attempt = 0;
             while (attempt < MAX_ATTEMPTS)
             {
@@ -29,7 +29,7 @@ namespace Practice4
                         }
                         if (numberFlag)
                         {
-                            Console.WriteLine("\nA word or a phrase shouldn't contain numbers and special symbols; Try again ");
+                            Console.WriteLine("\nA word or shouldn't contain numbers and special symbols; Try again ");
                             attempt++;
                             continue;
                         }

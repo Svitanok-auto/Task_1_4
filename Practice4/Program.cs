@@ -11,21 +11,44 @@ namespace Practice4
             Console.ReadKey();
         }
 
-        private static void CheckIfInputStringIsAPalindrome(char []array)
+        private static void CheckArrayLength(char []array)
         {
-            int i = 0;
-            while ((array[i] == array[array.Length - i - 1]) && (i < (array.Length - 1) / 2) && (array.Length > 2) && (array.Length % 2 != 0))
+            if (array.Length / 2 != 0)
             {
-                i++;
+                PrintResult(CheckIfInputStringIsPalindrome(array, (array.Length - 1 / 2)));
             }
-            if (i == (((array.Length - 1) / 2)) && (array.Length > 2) && (array.Length % 2 != 0))
+            else if (array.Length / 2 == 0)
             {
-                Console.WriteLine("\nThe word is a Palindrome ");
+                PrintResult(CheckIfInputStringIsPalindrome(array, (array.Length / 2)));
+            }
+        }
+
+        private static void PrintResult(bool isPalindrome)
+        {
+            if (isPalindrome)
+            {
+                Console.WriteLine("\nThe word is Palindrome");
             }
             else
             {
-                Console.WriteLine("\nThe word is NOT a Palindrome ");
+                Console.WriteLine("\nThe word is NOT Palindrome");
             }
+        }
+
+        private static bool CheckIfInputStringIsPalindrome(char[] array, int count)
+        {
+            int i = 0;
+            {
+                while ((i < count) && (array[i] == array[array.Length - i - 1]) )
+                {
+                    i++;
+                }
+                if ((i == count) && (array.Length > 2))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private static void CheckIfStringIsAPalindromeInLoop()
@@ -33,7 +56,7 @@ namespace Practice4
             int attempt = 0;
             while (attempt < MAX_ATTEMPTS)
             {
-                CheckIfInputStringIsAPalindrome(Validator.GetValidatedCharsArray());
+                CheckArrayLength(Validator.GetCharArray());
             }
         }
     }
