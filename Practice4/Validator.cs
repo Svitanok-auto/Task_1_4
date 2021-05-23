@@ -8,7 +8,7 @@ namespace Practice4
 
         public static char[] GetCharArray()
         {
-            Console.WriteLine("\nPlease populate a word to check");
+            Console.WriteLine("\nPlease populate a word to check ");
             int attempt = 0;
             while (attempt < MAX_ATTEMPTS)
             {
@@ -41,7 +41,7 @@ namespace Practice4
                     catch (SystemException ex)
                     {
                         Console.WriteLine("\nIncorrect Input, error: " + ex.Message);
-                        Console.WriteLine("\nTry again to populate correct string");
+                        Console.WriteLine("\nTry again to populate correct string ");
                         attempt++;
                     }
                 }
