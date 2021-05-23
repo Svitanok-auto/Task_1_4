@@ -21,7 +21,7 @@ namespace Practice4
                         bool numberFlag = false;
                         foreach (char character in populatedCharactersArray)
                         {
-                            if (Char.IsDigit(character)||(!Char.IsLetterOrDigit(character)))
+                            if (char.IsDigit(character)||(!char.IsLetterOrDigit(character)))
                             {
                                 numberFlag = true;
                                 break;
