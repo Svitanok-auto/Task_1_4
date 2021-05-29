@@ -13,7 +13,7 @@ namespace Practice4
 
         private static void CheckArrayLength(char []array)
         {
-            if (array.Length / 2 != 0)
+            if ((array.Length / 2 != 0) && (array.Length > 0))
             {
                 PrintResult(CheckIfInputStringIsPalindrome(array, (array.Length - 1 / 2)));
             }

@@ -51,7 +51,7 @@ namespace Practice4
                     attempt++;
                 }
             }
-        return default;
+        return null;
         }
     }
 }
