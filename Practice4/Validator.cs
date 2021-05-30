@@ -29,7 +29,7 @@ namespace Practice4
                         }
                         if (numberFlag)
                         {
-                            Console.WriteLine("\nA word or shouldn't contain numbers and special symbols; Try again ");
+                            Console.WriteLine("\nA word shouldn't contain numbers and special symbols; Try again ");
                             attempt++;
                             continue;
                         }
